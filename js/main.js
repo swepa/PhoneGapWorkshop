@@ -15,15 +15,26 @@ var app = {
 
     showAlert: function(message, title){
       if (navigator.notification){
-          navigator.notification.alert(message,null, title,'OK');
+          navigator.notification.alert(message,null, title,'OK - Press');
       }else{
+          alert('notification is not available. Check why???');
           alert(title ? (title +": "+ message) : message)
       }
 
     },
 
     initialize: function() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+            // Empty
+            alert("device is ready, going to initilize Store.");
+        }
+
         var self = this;
+
         this.store = new MemoryStore(function(){
             self.showAlert('Store Initialized', 'Information')
         });
