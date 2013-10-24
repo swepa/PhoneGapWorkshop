@@ -18,25 +18,27 @@ var app = {
           navigator.notification.alert(message,null, title,'OK - Press');
       }else{
           alert('notification is not available. Check why???');
-          alert(title ? (title +": "+ message) : message)
+          //alert(title ? (title +": "+ message) : message)
       }
 
     },
 
     initialize: function() {
-        document.addEventListener("deviceready", onDeviceReady, false);
+        var self = this;
 
+        document.addEventListener("deviceready", onDeviceReady, false);
         // device APIs are available
         //
         function onDeviceReady() {
             // Empty
-            alert("device is ready, going to initilize Store.");
+            //alert("device is ready, going to initilize Store.");
+            self.showAlert('Store Initialized', 'Information.')
         }
 
-        var self = this;
+
 
         this.store = new MemoryStore(function(){
-            self.showAlert('Store Initialized', 'Information')
+            //self.showAlert('Store Initialized', 'Information')
         });
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }

@@ -44,7 +44,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="60" selection-start="713" selection-end="713" vertical-scroll-proportion="0.21441442" vertical-offset="204" max-vertical-offset="867">
+            <state line="20" column="12" selection-start="729" selection-end="729" vertical-scroll-proportion="0.24504505" vertical-offset="204" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
@@ -78,8 +78,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -271,7 +271,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="60" selection-start="713" selection-end="713" vertical-scroll-proportion="0.21441442" vertical-offset="204" max-vertical-offset="867">
+        <state line="20" column="12" selection-start="729" selection-end="729" vertical-scroll-proportion="0.24504505" vertical-offset="204" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
