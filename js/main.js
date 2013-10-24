@@ -23,6 +23,13 @@ var app = {
 
     },
 
+    initializeStore: function(){
+        this.store = new MemoryStore(function(){
+            //self.showAlert('Store Initialized', 'Information')
+        });
+        $('.search-key').on('keyup', $.proxy(this.findByName, this));
+    },
+
     initialize: function() {
         var self = this;
 
@@ -33,14 +40,10 @@ var app = {
             // Empty
             //alert("device is ready, going to initilize Store.");
             self.showAlert('Store Initialized', 'Information.')
+            self.initializeStore();
         }
 
 
-
-        this.store = new MemoryStore(function(){
-            //self.showAlert('Store Initialized', 'Information')
-        });
-        $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
 
 };
