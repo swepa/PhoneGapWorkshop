@@ -23,11 +23,19 @@ var app = {
 
     },
 
+    renderHomeView: function (){
+      var html = "<div class='header'><h1>Home</h1></div>" +
+          "<div class='search-view'>" +
+            "<input class='search-key' type='text'/>" +
+            "<ul class='employee-list'></ul>" +
+        "</div>";
+      $('.search-key').on('keyup', $.proxy(this.findByName, this));
+    },
+
     initializeStore: function(){
         this.store = new MemoryStore(function(){
-            //self.showAlert('Store Initialized', 'Information')
+            this.renderHomeView();
         });
-        $('.search-key').on('keyup', $.proxy(this.findByName, this));
     },
 
     initialize: function() {
