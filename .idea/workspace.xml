@@ -26,7 +26,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="368" selection-end="368" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+            <state line="11" column="0" selection-start="245" selection-end="295" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="memory-store.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/storage/memory-store.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -35,7 +44,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.5099099" vertical-offset="74" max-vertical-offset="680">
+            <state line="27" column="60" selection-start="883" selection-end="883" vertical-scroll-proportion="0.64324325" vertical-offset="102" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -44,7 +53,7 @@
       <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="93" selection-start="7457" selection-end="7457" vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1853">
+            <state line="36" column="59" selection-start="1410" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1853">
               <folding />
             </state>
           </provider>
@@ -68,8 +77,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
@@ -134,6 +143,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhoneGapWorkshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhoneGapWorkshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -221,23 +248,30 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="93" selection-start="7457" selection-end="7457" vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1853">
+        <state line="11" column="0" selection-start="245" selection-end="295" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/storage/memory-store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="368" selection-end="368" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="59" selection-start="1410" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="1853">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.5099099" vertical-offset="74" max-vertical-offset="680">
+        <state line="27" column="60" selection-start="883" selection-end="883" vertical-scroll-proportion="0.64324325" vertical-offset="102" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
