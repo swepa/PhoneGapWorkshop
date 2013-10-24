@@ -33,8 +33,9 @@ var app = {
     },
 
     initializeStore: function(){
+        var self = this;
         this.store = new MemoryStore(function(){
-            this.renderHomeView();
+            self.renderHomeView();
         });
     },
 
