@@ -24,17 +24,14 @@ var app = {
     },
 
     renderHomeView: function (){
-      var html = "<div class='header'><h1>Home</h1></div>" +
-          "<div class='search-view'>" +
-            "<input class='search-key' type='text'/>" +
-            "<ul class='employee-list'></ul>" +
-        "</div>";
-      $('.search-key').on('keyup', $.proxy(this.findByName, this));
+      //var html = "";
+        var self = this;
+      $('.search-key').on('keyup', $.proxy(self.findByName, self));
     },
 
     initializeStore: function(){
         var self = this;
-        this.store = new MemoryStore(function(){
+        self.store = new MemoryStore(function(){
             self.renderHomeView();
         });
     },
@@ -51,7 +48,6 @@ var app = {
             self.showAlert('Store Initialized', 'Information.')
             self.initializeStore();
         }
-
 
     }
 
