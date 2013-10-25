@@ -69,11 +69,13 @@ var app = {
     route: function() {
         var hash = window.location.hash;
         if (!hash) {
+            self.showAlert('No hash found.', 'Information.');
             $('body').html(new HomeView(this.store).render().el);
             return;
         }
         var match = hash.match(app.detailsURL);
         if (match) {
+            self.showAlert('Hash found.', 'Information.');
             this.store.findById(Number(match[1]), function(employee) {
                 $('body').html(new EmployeeView(employee).render().el);
             });
