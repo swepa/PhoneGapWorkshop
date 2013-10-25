@@ -1,6 +1,6 @@
 var app = {
 
-    findByName: function() {
+    /*findByName: function() {
         console.log('findByName');
         var self = this;
         this.store.findByName($('.search-key').val(), function(employees) {
@@ -12,31 +12,32 @@ var app = {
             for (var i=0; i<l; i++) {
                 e = employees[i];
                 $('.employee-list').append('<li><a href="#employees/' + e.id + '">' + e.firstName + ' ' + e.lastName + '</a></li>');
-            }*/
+            }*//*
         });
-    },
+    },*/
 
     showAlert: function(message, title){
       if (navigator.notification){
           navigator.notification.alert(message,null, title,'OK - Press');
       }else{
-          alert('notification is not available. Check why???');
-          //alert(title ? (title +": "+ message) : message)
+          //alert('notification is not available. Check why???');
+          alert(title ? (title +": "+ message) : message)
       }
 
     },
 
-    renderHomeView: function (){
+    //renderHomeView: function (){
       //var html = "";
-        var self = this;
-        $('body').html(self.homeTpl);
-      $('.search-key').on('keyup', $.proxy(self.findByName, self));
-    },
+    //    var self = this;
+    //    $('body').html(self.homeTpl);
+    //  $('.search-key').on('keyup', $.proxy(self.findByName, self));
+    //},
 
     initializeStore: function(){
         var self = this;
         self.store = new MemoryStore(function(){
-            self.renderHomeView();
+            //self.renderHomeView();
+            $('body').html(new HomeView(self.store).render().el);
         });
     },
 
@@ -52,11 +53,12 @@ var app = {
             self.showAlert('Store Initialized', 'Information.')
             self.initializeStore();
 
-            self.homeTpl = Handlebars.compile($("#home-tpl").html());
-            self.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
-            self.showAlert('End device ready method.', 'Message');
+            //self.homeTpl = Handlebars.compile($("#home-tpl").html());
+            //self.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
+            //self.showAlert('End device ready method.', 'Message');
         }
         //self.initializeStore();
+        //self.showAlert('End device ready method.', 'Message');
         //this.homeTpl = Handlebars.compile($("#home-tpl").html());
         //this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
     }
