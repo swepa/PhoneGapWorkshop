@@ -101,7 +101,7 @@ var app = {
             //self.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
             //self.showAlert('End device ready method.', 'Message');
         }
-        //this.detailsURL = /^#employees\/(\d{1,})/;
+
         //self.registerEvents();
         //self.initializeStore();
         //self.showAlert('End device ready method.', 'Message');
