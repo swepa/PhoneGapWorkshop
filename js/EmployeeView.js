@@ -22,7 +22,7 @@ var EmployeeView = function(employee){
             function(error) {
                 //alert('Error getting location');
                 app.showAlert(error.code + ': ' + error.message, 'Error')
-            });
+            },{maximumAge: Infinity, timeout: 10000, enableHighAccuracy:false});
         return false;
     };
 
