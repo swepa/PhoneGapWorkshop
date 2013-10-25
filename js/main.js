@@ -37,7 +37,8 @@ var app = {
         var self = this;
         self.store = new MemoryStore(function(){
             //self.renderHomeView();
-            $('body').html(new HomeView(self.store).render().el);
+            //$('body').html(new HomeView(self.store).render().el);
+            self.route();
         });
     },
 
@@ -61,6 +62,22 @@ var app = {
                 $(event.target).removeClass('tappable-active');
             });
         }
+
+        $(window).on('hashchange', $.proxy(this.route, this));
+    },
+
+    route: function() {
+        var hash = window.location.hash;
+        if (!hash) {
+            $('body').html(new HomeView(this.store).render().el);
+            return;
+        }
+        var match = hash.match(app.detailsURL);
+        if (match) {
+            this.store.findById(Number(match[1]), function(employee) {
+                $('body').html(new EmployeeView(employee).render().el);
+            });
+        }
     },
 
     initialize: function() {
@@ -72,6 +89,7 @@ var app = {
         function onDeviceReady() {
             // Empty
             //alert("device is ready, going to initilize Store.");
+            this.detailsURL = /^#employees\/(\d{1,})/;
             self.registerEvents();
             self.initializeStore();
             self.showAlert('Store Initialized', 'Information.');
@@ -80,6 +98,7 @@ var app = {
             //self.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
             //self.showAlert('End device ready method.', 'Message');
         }
+        //this.detailsURL = /^#employees\/(\d{1,})/;
         //self.registerEvents();
         //self.initializeStore();
         //self.showAlert('End device ready method.', 'Message');
