@@ -69,13 +69,13 @@ var app = {
     route: function() {
         var hash = window.location.hash;
         if (!hash) {
-            this.showAlert('No hash found.', 'Information.');
+            //this.showAlert('No hash found.', 'Information.');
             $('body').html(new HomeView(this.store).render().el);
             return;
         }
         var match = hash.match(app.detailsURL);
         if (match) {
-            this.showAlert('Hash found.', 'Information.');
+            //this.showAlert('Hash found.', 'Information.');
             this.store.findById(Number(match[1]), function(employee) {
                 $('body').html(new EmployeeView(employee).render().el);
             });
@@ -100,9 +100,9 @@ var app = {
             //self.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
             //self.showAlert('End device ready method.', 'Message');
         }
-        this.detailsURL = /^#employees\/(\d{1,})/;
-        self.registerEvents();
-        self.initializeStore();
+        //this.detailsURL = /^#employees\/(\d{1,})/;
+        //self.registerEvents();
+        //self.initializeStore();
         //self.showAlert('End device ready method.', 'Message');
         //this.homeTpl = Handlebars.compile($("#home-tpl").html());
         //this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
