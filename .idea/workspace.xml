@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="24" selection-start="1013" selection-end="1013" vertical-scroll-proportion="-13.730769" vertical-offset="102" max-vertical-offset="731">
+            <state line="17" column="21" selection-start="672" selection-end="672" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="14" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.6936937" vertical-offset="584" max-vertical-offset="1241">
+            <state line="60" column="8" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.6018018" vertical-offset="686" max-vertical-offset="1241">
               <folding />
             </state>
           </provider>
@@ -87,8 +87,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/HomeView.js" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
@@ -311,9 +312,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="1" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.94014084" vertical-offset="2849" max-vertical-offset="3485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="24" selection-start="1013" selection-end="1013" vertical-scroll-proportion="-13.730769" vertical-offset="102" max-vertical-offset="731">
+        <state line="17" column="21" selection-start="672" selection-end="672" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
@@ -327,7 +335,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="14" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.6936937" vertical-offset="584" max-vertical-offset="1241">
+        <state line="60" column="8" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.6018018" vertical-offset="686" max-vertical-offset="1241">
           <folding />
         </state>
       </provider>
