@@ -84,6 +84,7 @@ var app = {
 
     initialize: function() {
         var self = this;
+        this.detailsURL = /^#employees\/(\d{1,})/;
 
         document.addEventListener("deviceready", onDeviceReady, false);
         // device APIs are available
@@ -91,7 +92,7 @@ var app = {
         function onDeviceReady() {
             // Empty
             //alert("device is ready, going to initilize Store.");
-            this.detailsURL = /^#employees\/(\d{1,})/;
+
             self.registerEvents();
             self.initializeStore();
             self.showAlert('Store Initialized', 'Information.');
