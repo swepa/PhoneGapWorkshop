@@ -52,8 +52,9 @@ var app = {
             self.showAlert('Store Initialized', 'Information.')
             self.initializeStore();
 
-            this.homeTpl = Handlebars.compile($("#home-tpl").html());
-            this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
+            self.homeTpl = Handlebars.compile($("#home-tpl").html());
+            self.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
+            self.showAlert('End device ready method.', 'Message');
         }
         //self.initializeStore();
         //this.homeTpl = Handlebars.compile($("#home-tpl").html());
