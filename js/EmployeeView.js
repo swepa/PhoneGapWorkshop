@@ -14,14 +14,14 @@ var EmployeeView = function(employee){
     };
     this.addLocation = function(event) {
         event.preventDefault();
-        console.log('addLocation');
+        //console.log('addLocation');
         navigator.geolocation.getCurrentPosition(
             function(position) {
                 $('.location', this.el).html(position.coords.latitude + ',' + position.coords.longitude);
             },
-            function() {
+            function(error) {
                 //alert('Error getting location');
-                app.showAlert('Error getting location.', 'Information')
+                app.showAlert(error.code + ': ' + error.message, 'Error')
             });
         return false;
     };
