@@ -102,8 +102,8 @@ var app = {
             //self.showAlert('End device ready method.', 'Message');
         }
 
-        self.registerEvents();
-        self.initializeStore();
+        //self.registerEvents();
+        //self.initializeStore();
         //self.showAlert('End device ready method.', 'Message');
         //this.homeTpl = Handlebars.compile($("#home-tpl").html());
         //this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
