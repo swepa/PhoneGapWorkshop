@@ -64,7 +64,7 @@ var EmployeeView = function(employee){
 
         var options = {
             quality: 50,
-            destinationType: camera.destinationType.DATA_URL,
+            destinationType: camera.destinationType.FILE_URI,
             sourceType: 1,
             encodingType: 0
         };
