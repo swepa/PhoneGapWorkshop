@@ -7,6 +7,7 @@ var EmployeeView = function(employee){
         this.el = $('<div/>');
         this.el.on('click', '.add-location-btn', this.addLocation);
         this.el.on('click', '.add-contact-btn', this.addToContacts);
+        this.el.on('click', '.change-pic-btn', this.changePicture);
     };
 
     this.render = function(){
@@ -42,8 +43,36 @@ var EmployeeView = function(employee){
         phoneNumbers[1] = new ContactField('mobile', employee.cellPhone, true); // preferred number
         contact.phoneNumbers = phoneNumbers;
         contact.save();
+        app.showAlert("Selected contact has been added in Phone Contact", "Information");
         return false;
     };
+
+    this.changePicture = function(event){
+        event.preventDefault();
+        console.log('changePicture');
+
+        if (!navigator.camera){
+            app.showAlert("Camera API is not available.", "Error")
+        }
+
+        var options = {
+            quality: 50,
+            destinationType: camera.destinationType.DATA_URL,
+            sourceType: 1,
+            encodingType: 0
+        };
+
+        navigator.camera.getPicture(
+            function(imageData){
+                $('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
+            },
+            function (){
+                app.showAlert('Error taking picture', 'Error');
+            },
+            options
+        )
+        return false;
+    }
 
     this.initialize();
 }
