@@ -62,11 +62,15 @@ var EmployeeView = function(employee){
 
         app.showAlert("Camera ready, checking options.", "Information");
 
-        var options = {
-            quality: 50,
-            destinationType: camera.destinationType.FILE_URI,
-            sourceType: 1,
-            encodingType: 0
+        var options ={ quality : 75,
+            destinationType : Camera.DestinationType.DATA_URL,
+            sourceType : Camera.PictureSourceType.CAMERA,
+            allowEdit : true,
+            encodingType: Camera.EncodingType.JPEG,
+            targetWidth: 100,
+            targetHeight: 100,
+            popoverOptions: CameraPopoverOptions,
+            saveToPhotoAlbum: false
         };
 
         app.showAlert("Going to call method.", "Information");
