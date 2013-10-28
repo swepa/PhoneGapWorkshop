@@ -66,8 +66,9 @@ var EmployeeView = function(employee){
             function(imageData){
                 $('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
             },
-            function (){
-                app.showAlert('Error taking picture', 'Error');
+            function (error){
+                app.showAlert(error, 'Error');
+                //app.showAlert('Error taking picture', 'Error');
             },
             options
         )
