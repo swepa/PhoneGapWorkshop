@@ -48,19 +48,13 @@ var EmployeeView = function(employee){
     };
 
     this.changePicture = function(event){
-        app.showAlert("Method Called.", "Information");
-
         event.preventDefault();
         console.log('changePicture');
-
-        app.showAlert("Checking for Camera API.", "Information");
 
         if (!navigator.camera){
             app.showAlert("Camera API is not available.", "Error");
             return;
         }
-
-        app.showAlert("Camera ready, checking options.", "Information");
 
         var options ={ quality : 75,
             destinationType : Camera.DestinationType.DATA_URL,
@@ -73,15 +67,12 @@ var EmployeeView = function(employee){
             saveToPhotoAlbum: false
         };
 
-        app.showAlert("Going to call method.", "Information");
         navigator.camera.getPicture(
             function(imageData){
-                app.showAlert("Successful.", "Information");
                 $('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
             },
             function (error){
                 app.showAlert(error, 'Error');
-                //app.showAlert('Error taking picture', 'Error');
             },
             options);
         return false;
