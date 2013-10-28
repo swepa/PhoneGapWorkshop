@@ -62,8 +62,10 @@ var EmployeeView = function(employee){
             encodingType: 0
         };
 
+        app.showAlert("Going to call method.", "Information");
         navigator.camera.getPicture(
             function(imageData){
+                app.showAlert("Successful.", "Information");
                 $('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
             },
             function (error){

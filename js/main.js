@@ -97,13 +97,18 @@ var app = {
             self.initializeStore();
             self.showAlert('Store Initialized', 'Information.');
 
+            //self.showAlert('Camera method call.', 'Information.');
+            //EmployeeView.changePicture(e);
+
             //self.homeTpl = Handlebars.compile($("#home-tpl").html());
             //self.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
             //self.showAlert('End device ready method.', 'Message');
         }
+        //self.showAlert('Camera method call.', 'Information.');
+        //EmployeeView.changePicture(employee);
 
-        //self.registerEvents();
-        //self.initializeStore();
+        self.registerEvents();
+        self.initializeStore();
         //self.showAlert('End device ready method.', 'Message');
         //this.homeTpl = Handlebars.compile($("#home-tpl").html());
         //this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
