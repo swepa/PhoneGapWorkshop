@@ -48,12 +48,19 @@ var EmployeeView = function(employee){
     };
 
     this.changePicture = function(event){
+        app.showAlert("Method Called.", "Information");
+
         event.preventDefault();
         console.log('changePicture');
 
+        app.showAlert("Checking for Camera API.", "Information");
+
         if (!navigator.camera){
-            app.showAlert("Camera API is not available.", "Error")
+            app.showAlert("Camera API is not available.", "Error");
+            return;
         }
+
+        app.showAlert("Camera ready, checking options.", "Information");
 
         var options = {
             quality: 50,
@@ -72,10 +79,9 @@ var EmployeeView = function(employee){
                 app.showAlert(error, 'Error');
                 //app.showAlert('Error taking picture', 'Error');
             },
-            options
-        )
+            options);
         return false;
-    }
+    };
 
     this.initialize();
 }
