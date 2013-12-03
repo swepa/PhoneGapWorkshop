@@ -1,21 +1,5 @@
 var app = {
 
-    /*findByName: function() {
-        console.log('findByName');
-        var self = this;
-        this.store.findByName($('.search-key').val(), function(employees) {
-            $('.employee-list').html(self.employeeLiTpl(employees));
-            /*
-            var l = employees.length;
-            var e;
-            $('.employee-list').empty();
-            for (var i=0; i<l; i++) {
-                e = employees[i];
-                $('.employee-list').append('<li><a href="#employees/' + e.id + '">' + e.firstName + ' ' + e.lastName + '</a></li>');
-            }*//*
-        });
-    },*/
-
     showAlert: function(message, title){
       if (navigator.notification){
           navigator.notification.alert(message,null, title,'OK - Press');
@@ -23,11 +7,9 @@ var app = {
           //alert('notification is not available. Check why???');
           alert(title ? (title +": "+ message) : message)
       }
-
     },
 
     slidePage: function(page) {
-
         var currentPageDest,
             self = this;
 
@@ -65,18 +47,9 @@ var app = {
 
     },
 
-    //renderHomeView: function (){
-      //var html = "";
-    //    var self = this;
-    //    $('body').html(self.homeTpl);
-    //  $('.search-key').on('keyup', $.proxy(self.findByName, self));
-    //},
-
     initializeStore: function(){
         var self = this;
         self.store = new MemoryStore(function(){
-            //self.renderHomeView();
-            //$('body').html(new HomeView(self.store).render().el);
             self.route();
         });
     },
@@ -101,7 +74,6 @@ var app = {
                 $(event.target).removeClass('tappable-active');
             });
         }
-
         $(window).on('hashchange', $.proxy(this.route, this));
     },
 
@@ -115,15 +87,11 @@ var app = {
                 this.homePage = new HomeView(this.store).render();
                 this.slidePage(this.homePage);
             }
-            //this.showAlert('No hash found.', 'Information.');
-            //$('body').html(new HomeView(this.store).render().el);
             return;
         }
         var match = hash.match(app.detailsURL);
         if (match) {
-            //this.showAlert('Hash found.', 'Information.');
             this.store.findById(Number(match[1]), function(employee) {
-                //$('body').html(new EmployeeView(employee).render().el);
                 self.slidePage(new EmployeeView(employee).render());
             });
         }
@@ -143,23 +111,10 @@ var app = {
             self.registerEvents();
             self.initializeStore();
             self.showAlert('Store Initialized', 'Information.');
-
-            //self.showAlert('Camera method call.', 'Information.');
-            //EmployeeView.changePicture(e);
-
-            //self.homeTpl = Handlebars.compile($("#home-tpl").html());
-            //self.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
-            //self.showAlert('End device ready method.', 'Message');
         }
-        //self.showAlert('Camera method call.', 'Information.');
-        //EmployeeView.changePicture(employee);
 
         self.registerEvents();
         self.initializeStore();
-        //self.showAlert('End device ready method.', 'Message');
-        //this.homeTpl = Handlebars.compile($("#home-tpl").html());
-        //this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
     }
-
 };
 
