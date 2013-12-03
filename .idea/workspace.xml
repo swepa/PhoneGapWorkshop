@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeView.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EmployeeView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/EmployeeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="0" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.87007874" vertical-offset="459" max-vertical-offset="1530">
+            <state line="79" column="0" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -77,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="38" selection-start="5324" selection-end="5324" vertical-scroll-proportion="0.0" vertical-offset="905" max-vertical-offset="1921">
+            <state line="107" column="93" selection-start="7664" selection-end="7664" vertical-scroll-proportion="0.4915254" vertical-offset="1326" max-vertical-offset="2380">
               <folding />
             </state>
           </provider>
@@ -105,12 +105,12 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js/HomeView.js" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/js/storage/memoryStore.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/EmployeeView.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -372,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="38" selection-start="5324" selection-end="5324" vertical-scroll-proportion="0.0" vertical-offset="905" max-vertical-offset="1921">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="221" column="0" selection-start="4335" selection-end="4335" vertical-scroll-proportion="0.0" vertical-offset="3444" max-vertical-offset="4012">
@@ -416,7 +409,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/EmployeeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.87007874" vertical-offset="459" max-vertical-offset="1530">
+        <state line="79" column="0" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="93" selection-start="7664" selection-end="7664" vertical-scroll-proportion="0.4915254" vertical-offset="1326" max-vertical-offset="2380">
           <folding />
         </state>
       </provider>
