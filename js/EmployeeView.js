@@ -8,7 +8,19 @@ var EmployeeView = function(employee){
         this.el.on('click', '.add-location-btn', this.addLocation);
         this.el.on('click', '.add-contact-btn', this.addToContacts);
         this.el.on('click', '.change-pic-btn', this.changePicture);
+
+        // Show campaigns
+        this.el.on('click', '.show-campaigns', this.showCampaigns);
     };
+
+    this.showCampaigns = function(event) {
+        event.preventDefault();
+        app.showAlert("Show Campaigns link clicked.", "Information");
+        //console.log('addLocation');
+
+        return false;
+    };
+
 
     this.render = function(){
         this.el.html(EmployeeView.template(employee));
@@ -82,3 +94,4 @@ var EmployeeView = function(employee){
 }
 
 EmployeeView.template = Handlebars.compile($('#employee-tpl').html());
+EmployeeView.campaignsTemplate = Handlebars.compile($('#campaigns-li-tpl').html());
