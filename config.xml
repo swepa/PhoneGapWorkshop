@@ -22,6 +22,8 @@
     -->
     <preference name="permissions"                value="none"/>
 
+    <gap:platform name="android" />
+
     <!--
             Enable individual API permissions here.
             The "device" permission is required for the 'deviceready' event.
